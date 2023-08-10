@@ -1,0 +1,206 @@
+html {
+min-height: 100%;
+}
+
+body {
+margin: 0;
+background-color: #596F61;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center ;
+background-attachment: fixed;
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.container01 {
+width: 100%;
+color: #26272C;
+}
+
+
+
+
+
+.web-name {
+top: 0;
+left: 0;
+background-color: #040703;
+width: 25vw;
+height: 2rem;
+border-radius: 0 0 10px 0;
+padding: 0px 20px 55px 20px;
+color: white;
+display: flex;
+font-family: 'Merienda'
+}
+
+
+
+
+.contact {
+position: absolute;
+display: flex;
+right: 0;
+top: 0;
+width: 40vw;
+margin-top: 1.45rem;
+}
+
+
+
+li {
+display: inline-block;
+margin-left: 10px;
+}
+
+
+
+.container02 {
+text-align: center;
+background-image:url("My profile.jpg");
+background-size: cover;
+border-radius: 70px 70px 70px 70px;
+}
+
+.-h1 {
+font-size: 6vw;
+padding: 25px;
+font-family: 'Lilita One';
+font-size: 70px;
+}
+
+
+.-h12 {
+margin-top: 0;
+font-family: 'Lilita One';
+font-size: 60px;
+color: white;
+}
+
+.imgp{
+padding: 0px;
+border-radius: 50%;
+width: 20vw;
+margin-top: 20px;
+}
+
+.myh1 {
+position: relative;
+top: 30px;
+color: #89D304;
+font-family: 'Rock Salt';
+font-size: 35px;
+padding-bottom: 40px;
+}
+
+
+.container03 {
+width: 60vw;
+background-image:
+url("edu-bg-image.jpg");
+background-size: cover;
+color: black;
+border-radius: 10px;
+position: relative;
+padding: 3%;
+margin: 30px auto 0;
+font-size: 1.5rem;
+line-height: 1.5;
+font-family: 'Preahvihear';
+}
+
+.container03:hover{
+position: relative;
+}
+
+.container04 {
+width: 60vw;
+background-image: url("cando-bg-image.jpg");
+background-size: 100%;
+background-repeat: none;
+color: #FF1000;
+border-radius: 10px;
+padding: 3%;
+position: relative;
+margin: 30px auto 0;
+margin-top: 30px;
+font-size: 1.5rem;
+font-family: 'Preahvihear';
+line-height: 1.5;
+}
+
+.container04:hover{
+position: relative;
+
+}
+
+.container05 {
+width: 60vw;
+background-image:
+url("hobbies-bg-image.jpg");
+background-size: cover;
+color: gold;
+border-radius: 10px;
+position: relative;
+padding: 3%;
+margin: 30px auto 0;
+font-size: 1.5rem;
+line-height: 1.5;
+font-family: 'Preahvihear';
+}
+
+.container05:hover{
+
+}
+
+
+span {
+font-size: 40px;
+}
+
+.contact-link {
+width: 32px;
+
+}
+
+.contact-link:hover {
+width: 40px;
+border: solid 5px #171829;
+border-radius: 40%;
+}
+
+.brand-name {
+font-size: 30px;
+color: #003D5D;
+}
+
+.footer-link-a {
+text-decoration: none;
+font-size: 30px;
+padding: 0 7px 50px 7px
+
+}
+
+.footer-link {
+text-decoration: none;
+color: black;
+}
+
+a {
+color: #060606;
+text-decoration: none;
+}
+
+a:hover {
+color: #66F7EC;
+}
+
+.text-link {
+display: none;
+}
+
+
+
