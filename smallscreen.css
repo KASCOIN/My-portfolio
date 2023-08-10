@@ -1,0 +1,203 @@
+html {
+min-height: 100%;
+}
+
+body {
+margin: 0;
+background-color: #596F61;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center ;
+background-attachment: fixed;
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.container01 {
+color: #26272C;
+width: 100%;
+height: 30%;
+}
+
+
+
+
+
+.web-name {
+position:relative;
+border-radius:0 0 40% 40%;
+font-size: 1.2rem;
+color: white;
+padding-left: 2%;
+display: flex;
+background-color: #040703;
+height: 50%;
+font-family: 'Merienda'
+}
+
+
+
+
+
+
+
+
+li {
+display: inline-block;
+margin-left: 10px;
+}
+
+
+
+.container02 {
+text-align: center;
+background-image:url("My profile.jpg");
+background-size: cover;
+position: relative;
+top: 0;
+margin-top: 0;
+border-radius: 50px 50px 20px 20px;
+}
+
+.-h1 {
+margin-top: 0;
+padding: 25px;
+font-family: 'Lilita One';
+font-size: 10vw;
+}
+
+
+.-h12 {
+margin-top: 0;
+font-family: 'Lilita One';
+font-size: 10vw;
+color: white;
+}
+
+.imgp{
+padding: 0px;
+border-radius: 60%;
+width: 40vw;
+margin-top: 20px;
+}
+
+.myh1 {
+position: relative;
+top: 30px;
+color: #89D304;
+font-family: 'Rock Salt';
+font-size: 7vw;
+padding-bottom: 70px;
+
+}
+
+
+.container03 {
+width: 94%;
+background-image:url("edu-bg-image.jpg");
+background-size: cover;
+color: black;
+border-radius: 30px 30px 0 0;
+position: relative;
+padding: 3%;
+margin: 0px auto 0;
+font-size: 1.5rem;
+line-height: 1.5;
+font-family: 'Preahvihear';
+}
+
+.container03:hover{
+position: relative;
+}
+
+.container04 {
+width: 94%;
+background-image: url("cando-bg-image.jpg");
+background-size: cover;
+color: white;
+padding: 3%;
+position: relative;
+margin: 0px auto 0;
+font-size: 1.5rem;
+line-height: 1.5;
+font-family: 'Preahvihear';
+}
+
+.container04:hover{
+position: relative;
+
+}
+
+.container05 {
+width: 94%;
+background-image:url("hobbies-bg-image.jpg");
+background-size: cover;
+color: gold;
+border-radius: 0 0 30px 30px;
+position: relative;
+padding: 3%;
+margin: 0px auto 0;
+font-size: 1.5rem;
+line-height: 1.5;
+font-family: 'Preahvihear';
+}
+
+.container05:hover{
+
+}
+
+.footer-div {
+}
+
+.contact {
+position: absolute;
+margin: 0 0 auto;
+width: 75vw;
+}
+
+.contact-link {
+width: 10vw;
+}
+
+span {
+font-size: 40px;
+}
+
+
+
+
+.brand-name {
+font-size: 30px;
+color: #003D5D;
+}
+
+.footer-link-a {
+text-decoration: none;
+font-size: 30px;
+padding: 0 7px 50px 7px
+
+}
+
+.footer-link {
+text-decoration: none;
+color: black;
+}
+
+a {
+color: #060606;
+text-decoration: none;
+}
+
+a:hover {
+color: #66F7EC;
+}
+
+.text-link {
+display: none;
+}
+
+
+
+
