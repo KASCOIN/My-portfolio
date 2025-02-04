@@ -1,99 +1,299 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>My Portfolio</title>
-    <script>
-        function redirectone() {
-        window.location= "https://instagram.com/nwosu_kascoin?igshid=ZDc4ODBmNjlmNQ==";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Nwosu Kasiemobechukwu Faith | Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Arvo:wght@700&family=Montserrat:wght@500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        function redirecttwo() {
-        window.location= "https://www.facebook.com/kascoin.me";
+        :root {
+            --primary-accent: #89D304;
+            --dark-bg: #040703;
+            --section-bg: rgba(255,255,255,0.12);
         }
 
-        function redirectthree() {
-        window.location= "mailto:nwosukasie@gmial.com";
+        html {
+            scroll-behavior: smooth;
+            height: 100%;
         }
 
-        function redirectfour() {
-        window.location= "https://wa.me/2348133186167";
+        body {
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+            background: linear-gradient(rgba(4,7,3,0.92), rgba(4,7,3,0.92)),
+                        url('https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
         }
 
+        /* Header */
+        .web-name {
+            background: rgba(4, 7, 3, 0.98);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            text-align: center;
+        }
 
+        .brand-name {
+            font-family: 'Arvo', serif;
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            color: var(--primary-accent);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
 
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7526041269279947"
-     crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fasthand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lilita One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Preahvihear" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 576px)" href="smallscreen.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 576px)" href="mediumscreen.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="widescreen.css">
+        /* Main Content */
+        main {
+            flex: 1;
+            padding-top: 100px;
+        }
+
+        /* Hero Section */
+        .container02 {
+            padding: 6rem 5% 3rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .-h12 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 8vw, 4rem);
+            color: var(--primary-accent);
+            margin: 1rem 0;
+            line-height: 1.2;
+        }
+
+        .imgp {
+            width: min(280px, 70%);
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 4px solid var(--primary-accent);
+            box-shadow: 0 0 30px rgba(137,211,4,0.3);
+            margin: 2rem auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .myh1 {
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            margin: 1rem 0;
+        }
+
+        /* Content Sections */
+        .content-section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 15px;
+            background: var(--section-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .section-heading {
+            font-size: clamp(1.5rem, 5vw, 2.2rem);
+            margin-bottom: 1.5rem;
+            color: var(--primary-accent);
+            text-align: center;
+            font-family: 'Arvo', serif;
+        }
+
+        .content-wrapper ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-wrapper li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: rgba(255,255,255,0.06);
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Footer */
+        .footer-div {
+            margin-top: auto;
+            padding: 2rem 5%;
+            background: rgba(4,7,3,0.98);
+            text-align: center;
+            border-top: 2px solid var(--primary-accent);
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+        }
+
+        .contact-link:hover {
+            background: var(--primary-accent);
+            color: var(--dark-bg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container02 {
+                padding: 5rem 5% 2rem;
+            }
+
+            .content-section {
+                width: 95%;
+                padding: 1.5rem;
+                margin: 1.5rem auto;
+            }
+
+            .content-wrapper li {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 1.8rem;
+            }
+
+            .imgp {
+                width: 60%;
+            }
+
+            .contact-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Fallbacks for older browsers */
+        @supports not (backdrop-filter: blur(12px)) {
+            .content-section {
+                background: rgba(4,7,3,0.85);
+            }
+            .web-name {
+                background: rgba(4,7,3,0.95);
+            }
+        }
+    </style>
 </head>
-
-<style>
-
-
-
-</style>
 <body>
-<div class="container01">
-    <div class="web-name">
-        <h1 class="qou"><</h1><h1 class="kodef">KODEF</h1><h1 class="quo">/></h1>
-    </div>
-    
-<div class="container02">
-    <h1 class="-h1">WELCOME</h1><br />
-    <h1 class="-h12">TO</h1><br />
-    <h1 class="-h12">KODEF WORLD</h1><br />
+    <header class="web-name">
+        <h1 class="brand-name">MAZIMUM</h1>
+    </header>
 
-    <img alt="My profile image" class="imgp" height="200px" src="profilepic.jpg" width="300px"><br />
-    <p class="myh1"> <b>NWOSU . F . KASIEMOBECHUKWU</b></p>
-</div>
-<div class="container03">
-    <span><b>Education:</b></span>
-    <ul>
-        <li><b>* Studying Meteorology and climate science</b></li>
-        <li><b>* On a road trip to become a software developer.</b></li>
-    </ul>
-</div>
-<div class="container04">
-    <span>CAN DO:</span>
-    <ul>
-        <li><b>* Web designing</b></li>
-        <li><b>* House Plumbing maintaining.</b></li>
-        <li><b>* Social Media Marketing.</b></li>
-        <li><b>* Mathematics Tutoring.</b></li>
-        <li><b>* Data Typist.</b></li>
-    </ul>
-</div>
-<div class="container05">
-    <span>HOBBIES:</span>
-    <ul>
-        <li><b>* Playing video games.</b></li>
-        <li><b>* Playing soccer.</b></li>
-        <li><b>* Learning new things.</b></li>
-        <li><b>* Solving Puzzles.</b></li>
-    </ul>
-</div>
-<div class="container06">
+    <main>
+        <section class="container02" id="about">
+            <h1 class="-h12">Salve, ego sum Mazimum</h1>
+            <img src="https://thumbs4.imagebam.com/68/37/fd/MEZEX2C_t.jpg" 
+                 alt="Professional Portrait" 
+                 class="imgp"
+                 loading="lazy">
+            <h2 class="myh1">Meteorologist & Tech Enthusiast</h2>
+        </section>
 
-</div>
-<div class="footer-div">
-    <div class="contact">
-        <ul>
-            <li class="l-l"><input type="image" class="contact-link" onclick="redirectthree()" src="gmail.png"></li>
-            <li class="l_l"><input type="image" class="contact-link" onclick="redirectfour()" src="whatsapp.png"></li>
-            <li class="l_l"><input type="image" class="contact-link" onclick="redirecttwo()" src="facebook (1).png"></li>
-            <li class="l_l"><input type="image" class="contact-link" onclick="redirectone()" src="instagram.png"></li>
-        </ul>
-    </div>
-</div>
- </div>
+        <section class="content-section" id="education">
+            <h2 class="section-heading">Education</h2>
+            <div class="content-wrapper">
+                <ul>
+                    <li>🎓 Meteorology and Climate Science Degree - University of Lagos (2023-Present)</li>
+                    <li>📚 Writing in Science - Coursera Certification</li>
+                    <li>📜 Aspiring Certified Weather Analyst - Nigerian Meteorological Agency</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" id="skills">
+            <h2 class="section-heading">Technical Expertise</h2>
+            <div class="content-wrapper">
+                <ul>
+                    <li>🌦️ Meteorological Data Analysis & Interpretation</li>
+                    <li>📊 Scientific Writing & Research Methodology</li>
+                    <li>💻 Basic Web Development (HTML/CSS/JavaScript)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" id="hobbies">
+            <h2 class="section-heading">Professional Pursuits</h2>
+            <div class="content-wrapper">
+                <ul>
+                    <li>📚 Scientific Research & Technical Writing</li>
+                    <li>⚽ Watching Football and Playing Video Games</li>
+                    <li>🌐 Learning Emerging Technologies</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-div" id="contact">
+        <div class="contact">
+            <a href="https://www.facebook.com/share/15wWMixsBj/" target="_blank" class="contact-link">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://x.com/mazimum_001?t=4XUgHsZOSIkwk36qo8YhAA&s=09" target="_blank" class="contact-link">
+                <i class="fab fa-x-twitter"></i> X
+            </a>
+            <a href="https://www.linkedin.com/in/kasiemobechukwu-nwosu-97830432b" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/official.mazimum/profilecard/?igsh=MjEzMWVoaDN0bzVl" target="_blank" class="contact-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <p style="color: var(--primary-accent); margin-top: 1.5rem; font-size: 0.9rem;">
+            © <span id="currentYear"></span> MAZIMUM. Omnia iura reservata.
+        </p>
+    </footer>
+
+    <script>
+        // Basic JavaScript with error handling
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Set current year
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
+                
+                // Image fallback
+                const img = document.querySelector('.imgp');
+                img.onerror = function() {
+                    this.src = 'https://via.placeholder.com/280x280?text=Profile+Image';
+                };
+            } catch (error) {
+                console.log('Initialization error:', error);
+            }
+        });
+    </script>
 </body>
 </html>
