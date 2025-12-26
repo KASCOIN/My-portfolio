@@ -144,6 +144,7 @@ main {
 }
 .content-wrapper li {
   padding: 1rem;
+  color: rgb(78, 124, 85);
   background: rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
@@ -152,6 +153,7 @@ main {
 }
 .content-wrapper li:hover {
   transform: translateY(-5px);
+  color: rgb(78, 124, 85);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
