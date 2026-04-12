@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Nwosu Kasiemobechukwu Faith | Professional Portfolio</title>
+    <title>K.Faith.Nwosu (MAZIMUM) | Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Arvo:wght@700&family=Montserrat:wght@500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="/ms-icon-310x310.png" type="image/x-icon">
+    <link rel="icon" href="/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="animated-background"></div>
+    
+    <!-- Navigation Header -->
     <header class="web-name">
-        <h1 class="brand-name">MAZIMUM</h1>
-        <div class="contact">
+        <div class="header-container">
+            <h1 class="brand-name">MAZIMUM</h1>
+            <nav class="main-nav">
+                <button class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i> Home
+                </button>
+                <button class="nav-link" data-page="about">
+                    <i class="fas fa-user"></i> About
+                </button>
+                <button class="nav-link" data-page="portfolio">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </button>
+                <button class="nav-link" data-page="skills">
+                    <i class="fas fa-code"></i> Skills
+                </button>
+                <button class="nav-link" data-page="contact">
+                    <i class="fas fa-envelope"></i> Contact
+                </button>
+            </nav>
+        </div>
+       <!--<div class="contact">
             <a href="https://www.facebook.com/share/15wWMixsBj/" target="_blank" class="contact-link">
                 <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://x.com/mazimum_001?t=4XUgHsZOSIkwk36qo8YhAA&s=09" target="_blank" class="contact-link">
-                <i class="fa-brands fa-x-twitter"><p>X</p></i>
+                <i class="fa-brands fa-x-twitter"></i>
             </a>
             <a href="https://www.linkedin.com/in/kasiemobechkwu-nwosu-97830432b/" target="_blank" class="contact-link">
                 <i class="fab fa-linkedin-in"></i> 
@@ -32,56 +54,165 @@
 			<a href="https://t.me/official_mazimum" target="_blank" class="contact-link">
 				<i class="fa-brands fa-telegram"></i>
 			</a>
-        </div>
+        </div> -->
     </header>
 
-    <main>
-        <section class="hero-section" id="about">
-            <h1 class="hero-title">Salve, ego sum Mazimum</h1>
-            <img src="PPc.jpg" alt="Professional Portrait" class="profile-img" loading="lazy">
-            <h2 class="hero-subtitle">Meteorologist & Tech Enthusiast</h2>
-        </section>
-
-        <section class="content-section" id="education">
-            <h2 class="section-heading">Education</h2>
-            <div class="content-wrapper">
-                <ul>
-                    <li>🎓 Meteorology and Climate Science Degree - University of Lagos (2023-Present)</li>
-                    <li>📜 Aspiring Certified Weather Analyst - Nigerian Meteorological Agency</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="content-section" id="skills">
-            <h2 class="section-heading">Technical Expertise</h2>
-            <div class="content-wrapper">
-                <ul>
-                    <li>🌦️ Meteorological Processes & Interpretation</li>
-                    <li>📊 Scientific Writing & Research Methodology</li>
-                    <li>👩‍💻 Julia Programming</li>
-                    <li>💻 Web Development </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="content-section" id="projects">
-            <h2 class="section-heading">Projects</h2>
-            <div class="content-wrapper">
-                <a href="" class="project-button">Department Webpage(Library)(Working the Update)</a>
-                <a href="" class="project-button">My Git Profile (coming soon)</a>
+    <!-- Main Content Area with Multiple Pages -->
+    <main class="pages-container">
+        
+        <!-- HOME PAGE -->
+        <section class="page active" id="home">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Salve, ego sum Mazimum</h1>
+                    <img src="PPc.jpg" alt="Professional Portrait" class="profile-img" loading="lazy">
+                    <h2 class="hero-subtitle">Environmental & Tech Enthusiast</h2>
+                    <p class="hero-description">Passionate about Climate, wellbeing, and emerging technologies</p>
+                    <div class="cta-buttons">
+                        <button class="cta-btn primary" onclick="navigateTo('portfolio')">View My Work</button>
+                        <button class="cta-btn secondary" onclick="navigateTo('contact')">Get In Touch</button>
+                    </div>
                 </div>
-        </section>
-
-        <section class="content-section" id="hobbies">
-            <h2 class="section-heading">Hobbies</h2>
-            <div class="content-wrapper">
-                <ul>
-                    <li>📚 Scientific Research & Technical Writing</li>
-                    <li>⚽ Watching Football and Playing Video Games</li>
-                    <li>🌐 Learning Emerging Technologies</li>
-                </ul>
             </div>
         </section>
+
+        <!-- ABOUT PAGE -->
+        <section class="page" id="about">
+            <div class="page-container">
+                <h1 class="page-title">About Me</h1>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>Who I Am</h2>
+                        <p>I am a technical professional who loves finding creative ways to bridge the gap between complex information and everyday use. Whether I’m building predictive models for environmental awareness or designing digital management systems for organizations, my goal is always to make technology accessible and helpful. I enjoy working across different disciplines to help people turn their ideas into functional, data-driven tools.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="stat-box">
+                            <h3>🎓</h3>
+                            <p><strong>Education:</strong> Meteorology & Climate Science</p>
+                            <p>University of Lagos (2023-Present)</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>📜</h3>
+                            <p><strong>Aspiring:</strong> Certified Weather Analyst</p>
+                            <p>Nigerian Meteorological Agency</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>🌍</h3>
+                            <p><strong>Based in:</strong> Lagos, Nigeria</p>
+                            <p>Open to Remote Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO PAGE -->
+        <section class="page" id="portfolio">
+            <div class="page-container">
+                <h1 class="page-title">My Portfolio</h1>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="card-icon">🌊</div>
+                        <h3>Flood Resilience Modeling</h3>
+                        <p>Developed a data-driven prediction system designed to enhance local safety and environmental awareness. This project focuses on simplifying complex climate data into actionable insights for better community preparation.</p>
+                        <span class="status">Currently Working on Update</span>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="card-icon">💻</div>
+                        <h3>GitHub Portfolio</h3>
+                        <p>Collection of programming projects showcasing my work in Julia, Python, and web development technologies.</p>
+                        <span class="status coming">Coming Soon</span>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Meteorological Projects</h3>
+                        <p>Scientific research and data analysis projects combining meteorology with computational tools.</p>
+                        <span class="status">In Development</span>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="card-icon">📱</div>
+                        <h3>Tech Explorations</h3>
+                        <p>Experiments with emerging technologies and innovative solutions to real-world problems.</p>
+                        <span class="status coming">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS PAGE -->
+        <section class="page" id="skills">
+            <div class="page-container">
+                <h1 class="page-title">Technical Expertise</h1>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>🌦️ Meteorology</h3>
+                        <ul>
+                            <li>Meteorological Processes & Interpretation</li>
+                            <li>Satellite Remote Sensing & GIS</li>
+                            <li>Scientific Computing</li>
+                            <li>Synoptic Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>📊 Scientific Methods</h3>
+                        <ul>
+                            <li>Categorization & Organization</li>
+                            <li>Data-Driven Modeling</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>👩‍💻 Programming</h3>
+                        <ul>
+                            <li>Julia Programming</li>
+                            <li>JavaScript & Web APIs</li>
+                            <li>QGIS(SAGA and GRASS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="interests-section">
+                    <h2>What I'm Interested In</h2>
+                    <div class="interests-list">
+                        <span>📚 Scientific Research</span>
+                        <span>⚽ Football</span>
+                        <span>🎮 Video Games</span>
+                        <span>🌐 Emerging Tech</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section class="page" id="contact">
+            <div class="page-container contact-page">
+                <h1 class="page-title">Get In Touch</h1>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <p>I'm always open to exciting opportunities, collaborations, and conversations about meteorology, technology, and innovation.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="https://www.linkedin.com/in/kasiemobechkwu-nwosu-97830432b/" class="contact-method" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/mazimum_001" class="contact-method" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>X</span>
+                            </a>
+                            <a href="mailto:nwosukasie@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://www.instagram.com/official.mazimum/" class="contact-method" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 

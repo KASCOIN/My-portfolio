@@ -1,40 +1,83 @@
-// Basic JavaScript with error handling
-document.addEventListener('DOMContentLoaded', function () {
-    try {
-        // Set current year
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Image fallback
-        const img = document.querySelector('.profile-img');
-        img.onerror = function () {
-            this.src = 'https://via.placeholder.com/280x280?text=Profile+Image';
-        };
-    } catch (error) {
-        console.log('Initialization error:', error);
+// SPA Navigation
+function navigateTo(page) {
+  // Hide all pages
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+  
+  // Show the selected page
+  const selectedPage = document.getElementById(page);
+  if (selectedPage) {
+    selectedPage.classList.add('active');
+  }
+  
+  // Update active nav link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    if (link.dataset.page === page) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
+  });
+  
+  // Scroll to top
+  window.scrollTo(0, 0);
+}
+
+// Setup navigation listeners
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    // Setup nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const page = this.dataset.page;
+        navigateTo(page);
+      });
+    });
+
+    // Set current year
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+    // Image fallback
+    const img = document.querySelector('.profile-img');
+    if (img) {
+      img.onerror = function() {
+        this.src = 'https://via.placeholder.com/280x280?text=Profile+Image';
+      };
+    }
+  } catch (error) {
+    console.log('Initialization error:', error);
+  }
 });
 
 // Add Intersection Observer for scroll animations
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate-active');
-        }
-    });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-active');
+    }
+  });
 }, { threshold: 0.1 });
 
-// Observe all sections that need animation
-document.querySelectorAll('.content-section').forEach(section => {
-    section.classList.add('animate-on-scroll', 'slide-from-right');
-    observer.observe(section);
-});
+// Observe all animated elements
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.portfolio-card').forEach(card => {
+    card.classList.add('animate-on-scroll', 'slide-from-right');
+    observer.observe(card);
+  });
 
-document.querySelectorAll('.hero-section').forEach(section => {
-    section.classList.add('animate-on-scroll', 'scale-in');
-    observer.observe(section);
-});
+  document.querySelectorAll('.skill-category').forEach(skill => {
+    skill.classList.add('animate-on-scroll', 'slide-from-left');
+    observer.observe(skill);
+  });
 
-document.querySelectorAll('.project-button').forEach(button => {
-    button.classList.add('animate-on-scroll', 'slide-from-left');
-    observer.observe(button);
+  document.querySelectorAll('.stat-box').forEach(box => {
+    box.classList.add('animate-on-scroll', 'slide-from-left');
+    observer.observe(box);
+  });
 });
