@@ -24,6 +24,30 @@ function navigateTo(page) {
   window.scrollTo(0, 0);
 }
 
+// GIS Modal Functions
+function openGISModal() {
+  const modal = document.getElementById('gisModal');
+  const backdrop = document.getElementById('gisModalBackdrop');
+  modal.classList.add('show');
+  backdrop.classList.add('show');
+  document.body.style.overflow = 'hidden'; // Prevent body scroll
+}
+
+function closeGISModal() {
+  const modal = document.getElementById('gisModal');
+  const backdrop = document.getElementById('gisModalBackdrop');
+  modal.classList.remove('show');
+  backdrop.classList.remove('show');
+  document.body.style.overflow = 'auto'; // Re-enable body scroll
+}
+
+// Close modal when pressing Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeGISModal();
+  }
+});
+
 // Setup navigation listeners
 document.addEventListener('DOMContentLoaded', function() {
   try {
