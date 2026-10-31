@@ -90,29 +90,21 @@
             <div class="page-container">
                 <h1 class="page-title">My Portfolio</h1>
                 <div class="portfolio-grid">
-                    <a href="https://your-website-link-here.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-                    <div class="portfolio-card">
-                        <div class="card-icon">🍲</div>
-                        <h3>MAZI-EATS: AI-Powered Campus Food & Spatial Navigation App</h3>
-                        <p>Developed a full-stack web application featuring a server-rendered frontend powered by a Julia (Genie.jl) backend. The platform integrates Generative AI to dynamically synthesize budget-friendly recipes on the fly (SDG 12) and maps out real-time UNILAG shop and restaurant locations to streamline food accessibility across campus (SDG 11).</p>
-                        <span class="status">Active Development</span>
-                    </div>
-                    </a>
                     <div class="portfolio-card" onclick="openGISModal()" style="cursor: pointer;">
                         <div class="card-icon">🌍</div>
                         <h3>GIS & Spatial Analysis Portfolio</h3>
                         <p>A collection of geospatial engineering projects leveraging QGIS and ArcGIS for remote sensing, terrain modeling, and land use classification. Features include detailed political and structural mapping datasets, regional climate impact layers, and localized demographic data visualization.</p>
                         <span class="status">Completed Projects</span>
                     </div>
-                    <div class="portfolio-card">
+                    <div class="portfolio-card" onclick="openMeteoModal()" style="cursor: pointer;">
                         <div class="card-icon">📊</div>
                         <h3>Meteorological Projects</h3>
                         <p>Scientific research and data analysis projects combining meteorology with computational tools.</p>
-                        <span class="status">In Development</span>
+                        <span class="status">Completed Projects</span>
                     </div>
                     <div class="portfolio-card">
                         <div class="card-icon">🌊</div>
-                        <h3>Flood Resilience Modeling</h3>
+                        <h3></h3>
                         <p>Developed a data-driven prediction system designed to enhance local safety and environmental awareness. This project focuses on simplifying complex climate data into actionable insights for better community preparation.</p>
                         <span class="status">Currently Working on Update</span>
                     </div>
@@ -242,8 +234,46 @@
             </div>
         </div>
     </div>
-    <div id="gisModalBackdrop" class="modal-backdrop" onclick="closeGISModal()"></div>
+    <div id="gisModalBackdrop" class="modal-backdrop" onclick="closeGISModal(); closeMeteoModal();"></div>
 
+    <!-- Meteorological Project Modal -->
+    <div id="meteoModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeMeteoModal()">&times;</span>
+            <div class="modal-header">
+                <h2>2024 vs 2025 Ozone Comparison</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img src="/Annual Difference.png" alt="Ozone comparison between 2024 and 2025 in Nigeria" class="modal-image" id="meteoProjectImage">
+                </div>
+                <div class="modal-details">
+                    <h3>Project Overview</h3>
+                    <p>This meteorological project compares ozone distribution between 2024 and 2025 across Nigeria, highlighting spatial differences in atmospheric composition over the two annual periods. The map classifies areas as significant decrease, slight decrease, stable or minimal change, slight increase, and significant increase to show where ozone conditions changed between the two years.</p>
+                    <ul class="modal-features">
+                        <li><b>2024–2025 Ozone Comparison</b>: Compared ozone levels between the two years to identify spatial variations and shifts in atmospheric distribution across the country.</li>
+                        <li><b>Geospatial Visualization</b>: Produced a clear and professional map layout with a legend, boundary context, and classified ranges for easy interpretation.</li>
+                        <li><b>Atmospheric Trend Interpretation</b>: Identified regions where ozone concentrations either declined or intensified from 2024 to 2025, providing insight into atmospheric variability.</li>
+                        <li><b>Environmental Insight</b>: Used the comparison to assess how changes in ozone distribution may relate to air quality, atmospheric conditions, and regional environmental monitoring.</li>
+                        <li><b>Scientific Communication</b>: Converted atmospheric data into a presentation-ready map suitable for research, analysis, and environmental decision support.</li>
+                    </ul>
+                    <p><strong>Technical Stack:</strong> Google Earth Engine, QGIS, GIS Cartography, Meteorological Data Analysis, Spatial Classification, Ozone Mapping</p>
+                    <p><strong>Applications:</strong> Atmospheric monitoring, environmental assessment, air quality analysis, and climate-related regional planning.</p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; width: 100%;">
+                    <a href="https://code.earthengine.google.com/?accept_repo=users/jbush7717/radar_project" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Google Earth Engine Code</a>
+                    <a href="https://lnkd.in/p/d9W5BvX3" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Full Project</a>
+                </div>
+            </div>
+
+            <hr style="border: none; height: 4px; background-color: #1e3a8a; margin: 20px 0;">
+
+            <div class="modal-footer">
+                <button class="modal-btn secondary" onclick="closeMeteoModal()">Close</button>
+            </div>
+        </div>
+    </div>
 
 	<!-- Begin of Chaport Live Chat code -->
 <script type="text/javascript">

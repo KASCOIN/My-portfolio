@@ -28,6 +28,7 @@ function navigateTo(page) {
 function openGISModal() {
   const modal = document.getElementById('gisModal');
   const backdrop = document.getElementById('gisModalBackdrop');
+  closeMeteoModal();
   modal.classList.add('show');
   backdrop.classList.add('show');
   document.body.style.overflow = 'hidden'; // Prevent body scroll
@@ -35,16 +36,43 @@ function openGISModal() {
 
 function closeGISModal() {
   const modal = document.getElementById('gisModal');
+  const meteoModal = document.getElementById('meteoModal');
   const backdrop = document.getElementById('gisModalBackdrop');
   modal.classList.remove('show');
-  backdrop.classList.remove('show');
-  document.body.style.overflow = 'auto'; // Re-enable body scroll
+
+  if (!meteoModal.classList.contains('show')) {
+    backdrop.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Re-enable body scroll
+  }
+}
+
+// Meteorological Modal Functions
+function openMeteoModal() {
+  const modal = document.getElementById('meteoModal');
+  const backdrop = document.getElementById('gisModalBackdrop');
+  closeGISModal();
+  modal.classList.add('show');
+  backdrop.classList.add('show');
+  document.body.style.overflow = 'hidden'; // Prevent body scroll
+}
+
+function closeMeteoModal() {
+  const modal = document.getElementById('meteoModal');
+  const gisModal = document.getElementById('gisModal');
+  const backdrop = document.getElementById('gisModalBackdrop');
+  modal.classList.remove('show');
+
+  if (!gisModal.classList.contains('show')) {
+    backdrop.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Re-enable body scroll
+  }
 }
 
 // Close modal when pressing Escape key
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
     closeGISModal();
+    closeMeteoModal();
   }
 });
 
