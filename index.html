@@ -44,10 +44,11 @@
         <section class="page active" id="home">
             <div class="hero-section">
                 <div class="hero-content">
-                    <h1 class="hero-title">Salve, ego sum Mazimum</h1>
+                    <p class="eyebrow">root@mazimum:~$</p>
+                    <h1 class="hero-title">whoami</h1>
                     <img src="PPc.jpg" alt="Professional Portrait" class="profile-img" loading="lazy">
-                    <h2 class="hero-subtitle">Environmental & Tech Enthusiast</h2>
-                    <p class="hero-description">Passionate about Climate, wellbeing, and emerging technologies</p>
+                    <h2 class="hero-subtitle">Climate Scientist • GIS Analyst • Tech Builder</h2>
+                    <p class="hero-description">I transform climate data, geospatial insight, and emerging technology into resilient, practical systems.</p>
                     <div class="cta-buttons">
                         <button class="cta-btn primary" onclick="navigateTo('portfolio')">View My Work</button>
                         <button class="cta-btn secondary" onclick="navigateTo('contact')">Get In Touch</button>
@@ -63,7 +64,7 @@
                 <div class="about-grid">
                     <div class="about-content">
                         <h2>Who I Am</h2>
-                        <p>I am a technical professional who loves finding creative ways to bridge the gap between complex information and everyday use. Whether I’m building predictive models for environmental awareness or designing digital management systems for organizations, my goal is always to make technology accessible and helpful. I enjoy working across different disciplines to help people turn their ideas into functional, data-driven tools.</p>
+                        <p>I am a technical professional focused on turning complex environmental and spatial data into clear, impactful solutions. I work across meteorology, GIS, and digital innovation to build tools, analyses, and visual stories that help people make smarter decisions. My approach is practical, research-driven, and grounded in real-world problem solving.</p>
                     </div>
                     <div class="about-card">
                         <div class="stat-box">
@@ -73,7 +74,7 @@
                         </div>
                         <div class="stat-box">
                             <h3>📜</h3>
-                            <p><strong>Focus:</strong> Providing solutions to help solve SDGs with my skills.</p>
+                            <p><strong>Focus:</strong> Building climate and geospatial solutions that support sustainable development.</p>
                         </div>
                         <div class="stat-box">
                             <h3>🌍</h3>
@@ -90,30 +91,105 @@
             <div class="page-container">
                 <h1 class="page-title">My Portfolio</h1>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card" onclick="openGISModal()" style="cursor: pointer;">
-                        <div class="card-icon">🌍</div>
-                        <h3>GIS & Spatial Analysis Portfolio</h3>
-                        <p>A collection of geospatial engineering projects leveraging QGIS and ArcGIS for remote sensing, terrain modeling, and land use classification. Features include detailed political and structural mapping datasets, regional climate impact layers, and localized demographic data visualization.</p>
-                        <span class="status">Completed Projects</span>
-                    </div>
-                    <div class="portfolio-card" onclick="openMeteoModal()" style="cursor: pointer;">
-                        <div class="card-icon">📊</div>
-                        <h3>Meteorological Projects</h3>
-                        <p>Scientific research and data analysis projects combining meteorology with computational tools.</p>
-                        <span class="status">Completed Projects</span>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-icon">🌊</div>
-                        <h3></h3>
-                        <p>Developed a data-driven prediction system designed to enhance local safety and environmental awareness. This project focuses on simplifying complex climate data into actionable insights for better community preparation.</p>
-                        <span class="status">Currently Working on Update</span>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-icon">📱</div>
-                        <h3>Tech Explorations</h3>
-                        <p>Experiments with emerging technologies and innovative solutions to real-world problems.</p>
-                        <span class="status coming">Coming Soon</span>
-                    </div>
+                    <article class="portfolio-card work-card" onclick="openGISModal()" style="cursor: pointer;" data-work="gis">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-avatar">M</div>
+                                <div>
+                                    <strong>mazimum</strong>
+                                    <span>GIS analyst</span>
+                                </div>
+                            </div>
+                            <span class="status">completed</span>
+                        </div>
+                        <div class="post-cover">
+                            <div class="card-icon">🌍</div>
+                        </div>
+                        <div class="work-body">
+                            <h3>GIS & Spatial Analysis Portfolio</h3>
+                            <p>A collection of geospatial engineering projects leveraging QGIS and ArcGIS for remote sensing, terrain modeling, and land use classification.</p>
+                            <div class="tag-row">
+                                <span>#QGIS</span>
+                                <span>#ArcGIS</span>
+                                <span>#RemoteSensing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card work-card" onclick="openMeteoModal()" style="cursor: pointer;" data-work="meteorology">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-avatar">M</div>
+                                <div>
+                                    <strong>mazimum</strong>
+                                    <span>climate data</span>
+                                </div>
+                            </div>
+                            <span class="status">published</span>
+                        </div>
+                        <div class="post-cover alt">
+                            <div class="card-icon">📊</div>
+                        </div>
+                        <div class="work-body">
+                            <h3>Meteorological Projects</h3>
+                            <p>Scientific research and data analysis projects combining meteorology with computational tools and atmospheric monitoring.</p>
+                            <div class="tag-row">
+                                <span>#Ozone</span>
+                                <span>#GEE</span>
+                                <span>#Climate</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card work-card" onclick="window.open('https://meteo-analze.onrender.com/', '_blank');" style="cursor: pointer;" data-work="climate-safety">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-avatar">M</div>
+                                <div>
+                                    <strong>mazimum</strong>
+                                    <span>live project</span>
+                                </div>
+                            </div>
+                            <span class="status">live</span>
+                        </div>
+                        <div class="post-cover alt-two">
+                            <div class="card-icon">☁️</div>
+                        </div>
+                        <div class="work-body">
+                            <h3>Meteo Analaze ☁️</h3>
+                            <p>An atmospheric research portal that combines live weather data, GPS-based conditions, and AI-style advisory insights for better local weather awareness and decision-making.</p>
+                            <div class="tag-row">
+                                <span>#WeatherAI</span>
+                                <span>#Forecasting</span>
+                                <span>#ClimateTech</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card work-card" data-work="tech-explorations">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="user-avatar">M</div>
+                                <div>
+                                    <strong>mazimum</strong>
+                                    <span>exploring</span>
+                                </div>
+                            </div>
+                            <span class="status coming">soon</span>
+                        </div>
+                        <div class="post-cover alt-three">
+                            <div class="card-icon">📱</div>
+                        </div>
+                        <div class="work-body">
+                            <h3>Tech Explorations</h3>
+                            <p>Experiments with emerging technologies and innovative solutions to real-world problems in climate and digital systems.</p>
+                            <div class="tag-row">
+                                <span>#Innovation</span>
+                                <span>#AI</span>
+                                <span>#Future</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -222,7 +298,7 @@
                     <p><strong>Technical Stack:</strong> QGIS, GeoJSON Data Formats, OpenStreetMap (OSM) Vector Layers</p>
                     <p><strong>Applications:</strong> Public administration, electoral planning, cross-border infrastructure deployment, and localized demographic resource mapping.</p>
                 </div>
-                            <a href="https://your-gis-portfolio-link.com" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Full Work</a>
+                            <a href="https://drive.google.com/file/d/1x5Ft6Qw_pGEpW5kbrImO8jg0Y6SUVlth/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Full Work</a>
 
             </div>
 
@@ -263,7 +339,7 @@
                 </div>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; width: 100%;">
                     <a href="https://code.earthengine.google.com/?accept_repo=users/jbush7717/radar_project" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Google Earth Engine Code</a>
-                    <a href="https://lnkd.in/p/d9W5BvX3" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Full Project</a>
+                    <a href="https://docs.google.com/document/d/1aR2-vm-qcLsdt29cqFIeb5bgx61NHh8Y/edit?usp=sharing&ouid=102140087619472682600&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View Full Project</a>
                 </div>
             </div>
 
